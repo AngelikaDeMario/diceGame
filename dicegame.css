@@ -1,3 +1,17 @@
 body {
-	background-image: url('map.jpg');
+	background-image: url('mmap.jpg');
+	background-position: center;
+	background-size: 90% 100%;
+}
+h1 {
+	color: #a11826;
+}
+table {
+	color: tan;
+	border-color: #652C21;
+	position: relative;
+	bottom: -115px;
+	font-family: Harry Potter;
+	font-size: 20px;
+	
 }
