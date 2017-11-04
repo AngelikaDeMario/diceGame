@@ -6,7 +6,7 @@ const myQuestions = [
 	topic: "Hogwarts Level 1",
 },
 {	
-	question "Who is Harry Potter's Slytherin enemy?",
+	question: "Who is Harry Potter's Slytherin enemy?",
 	answer: "Draco Malfoy",
 	difficulty: 1,
 	topic: "Hogwarts Level 1"
@@ -26,7 +26,7 @@ const myQuestions = [
 { 	
 	question: "Who killed Harry Potter's parents?",
 	answer: "Voldemort",
-	difficulty: 1
+	difficulty: 1,
 	topic: "Hogwarts Level 1",
 },
 { 
@@ -114,7 +114,7 @@ const myQuestions = [
 	topic: "Hogwarts Level 1",
 },
 { 
-	question: "What type of creature did Harry have to fight in the Goblet of Fire? in the first trial";
+	question: "What type of creature did Harry have to fight in the Goblet of Fire? in the first trial",
 	answer: "dragon",
 	difficulty: 1, 
 	topic: "Hogwarts Level 1",
@@ -128,7 +128,7 @@ const myQuestions = [
 {
 	question: "Who was the Herboligy teacher?",
 	answer: "Professor Sprout",
-	difficulty 2,
+	difficulty: 2,
 	topic: "Chamber of Secrets Level 2",
 },
 {	
@@ -150,7 +150,7 @@ const myQuestions = [
 	topic: "Chamber of Secrets Level 2",
 },
 {
-	question; "What is Voldemort's real name?",
+	question: "What is Voldemort's real name?",
 	answer: "Tom Marvolo Riddle",
 	difficulty: 2,
 	topic: "Chamber of Secrets Level 2",
@@ -223,7 +223,7 @@ const myQuestions = [
 	topic: "Azkaban Level 3",
 },
 {
-	question: "What is the name of Filch's cat?"
+	question: "What is the name of Filch's cat?",
 	answer: "Mrs. Norris",
 	difficulty: 3,
 	topic: "Azkaban Level 3", 
@@ -351,7 +351,7 @@ const myQuestions = [
 {
 	question: "What day and month is Harry Potter's birthday?",
 	answer: "July 31",
-	difficulty; 6,
+	difficulty: 6,
 	topic: "The Tower Level 6",
 },
 {
