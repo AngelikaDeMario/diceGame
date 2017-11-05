@@ -1,14 +1,7 @@
-//1st
-// startRound(myQuestions);
-	// console.log("here brah 1");
-
 
 function startRound(myQuestions){
-	console.log("here brah 2");
  let roll = rollDice(20);
  let question = decideQuestion(myQuestions,roll);
- // roundOne()
-	
 }
 
 function rollDice(diceSide){
@@ -16,22 +9,12 @@ function rollDice(diceSide){
 	return rollNumber;
 }
 
-//2nd
+
 function decideQuestion (myQuestions, diceRoll){
-	// let questionResult = pickQuestion(diceRoll);
-	//if (questionResult.difficulty === myQuestion.difficulty){
 		console.log(myQuestions[diceRoll].question);
 	return myQuestions[diceRoll].question;
 	//}
 }
-
-// // displayQuestions(data);
-// function pickQuestion(diceRoll){
-// if (obj.difficulty=2)(function
-// return myQuestion.question[diceRoll]
-// }
-
-//3rd
 function findDifficultyQuestions(myQuestions, difficultyLevel) {
 	 var output = [];
 		
@@ -44,19 +27,16 @@ function findDifficultyQuestions(myQuestions, difficultyLevel) {
 	 return output;
 }
 
-//4th
 function roundOne(myQuestions){
-	// var rolledNumber = rollDice(20);
 	var questionResult = getQuestion(rolledNumber, myQuestions);
 	return questionResult;
 	
 }
 
 
-
 function getQuestion(rolledNumber, myQuestions){
 	var results = findDifficultyQuestions(myQuestions, 1);
-	var question = findRoundTwoQuestion(results, rolledNumber);
+	var question = findRoundOneQuestion(results, rolledNumber);
 	return question;
 }
 
@@ -65,13 +45,6 @@ function displayQuestion(questionResult){
 	document.getElementById("question").innerHTML = questionResult;
 
 }
-
-
-
-
-
-
-
 
 function getQuestion(rolledNumber, myQuestions){
 	var results = findDifficultyQuestions(myQuestions, 1);
@@ -130,13 +103,9 @@ function findRoundOneQuestion(results, rolledNumber){
 	}
 }
 
-
-
-
-function roundTwo(myQuestions){
-	var rolledNumber = rollDice(12);
-	var questionResult = getQuestion(rolledNumber, myQuestions);
-	return questionResult;
+function roundStart(myQuestions){
+ let roll = rollDice(12);
+ let question = decideQuestion(myQuestions,roll);
 }
 
 function rollDice(diceSide){
@@ -145,7 +114,11 @@ function rollDice(diceSide){
 }
 
 
-
+function decideQuestion (myQuestions, diceRoll){
+		console.log(myQuestions[diceRoll].question);
+	return myQuestions[diceRoll].question;
+	//}
+}
 function findDifficultyQuestions(myQuestions, difficultyLevel) {
 	 var output = [];
 		
@@ -157,6 +130,27 @@ function findDifficultyQuestions(myQuestions, difficultyLevel) {
 	 }
 	 return output;
 }
+
+function roundTwo(myQuestions){
+	var questionResult = getQuestion(rolledNumber, myQuestions);
+	return questionResult;
+	
+}
+
+
+
+function displayQuestion(questionResult){
+	document.getElementById("question").innerHTML = questionResult;
+
+
+}
+function getQuestion(rolledNumber, myQuestions){
+	var results = findDifficultyQuestions(myQuestions, 2);
+	var question = findRoundTwoQuestion(results, rolledNumber);
+	return question;
+}
+
+
 
 function findRoundTwoQuestion(results, rolledNumber){
 	switch(rolledNumber) {
@@ -189,12 +183,6 @@ function findRoundTwoQuestion(results, rolledNumber){
 		break;
 	}
 }
-
-// let questionResult = function pickQuestion(diceRoll){
-	// if (obj.difficulty===3){
-		// return myQuestion.question[diceRoll];
-	// }
-// }
 
 
 function roundThree(myQuestions){
@@ -253,12 +241,6 @@ function findroundThreeQuestion(results, rolledNumber) {
 		break;
 	}
 }
-
-// let questionResult = function pickQuestion(diceRoll){
-// if (obj.difficulty===4){
-// return myQuestion.question[diceRoll]
-// }
-
 
 function roundFour(myQuestions){
 	var rolledNumber = rollDice(8);
